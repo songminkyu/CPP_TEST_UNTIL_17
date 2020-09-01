@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CRPT_PATTERN">
+      <UniqueIdentifier>{328fcd31-7332-4144-a224-17a2fc9ea910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Veriadic Template">
+      <UniqueIdentifier>{65641b29-a8f0-405a-8dd4-9a642e1025ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sigeton_Pattern">
+      <UniqueIdentifier>{8a4f6bfe-4f53-4bb3-bcc7-07795c38e13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\any_map">
+      <UniqueIdentifier>{9d1a351a-8781-4dc0-9c66-a98700687f2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="60_stack4test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sigletone.h">
+      <Filter>Source Files\Sigeton_Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_8.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_9.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_10.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_11.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_12.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="60_stack4test.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="NONTYPE_STRUCT.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_1.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_2.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_3.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_4.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_5.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_6.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_7.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="CRPT_basic_example.cpp">
+      <Filter>Source Files\CRPT_PATTERN</Filter>
+    </ClCompile>
+    <ClCompile Include="sigletone.cpp">
+      <Filter>Source Files\Sigeton_Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="source8.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_13.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_14.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_15.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+    <ClCompile Include="enabled_if_samplecpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="any_map_01.cpp">
+      <Filter>Source Files\any_map</Filter>
+    </ClCompile>
+    <ClCompile Include="any_map_02.cpp">
+      <Filter>Source Files\any_map</Filter>
+    </ClCompile>
+    <ClCompile Include="any_map_03cpp.cpp">
+      <Filter>Source Files\any_map</Filter>
+    </ClCompile>
+    <ClCompile Include="any_map_04cpp.cpp">
+      <Filter>Source Files\any_map</Filter>
+    </ClCompile>
+    <ClCompile Include="Source16.cpp">
+      <Filter>Source Files\Veriadic Template</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

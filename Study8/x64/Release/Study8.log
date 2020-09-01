@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  Study8_3.cpp
+  Study8_2.cpp
+  Study8_1.cpp
+  Study8_4.cpp
+  Study8_5.cpp
+Study8_2.obj : error LNK2005: main이(가) Study8_2.obj에 이미 정의되어 있습니다.
+Study8_2.obj : error LNK2005: main이(가) Study8_2.obj에 이미 정의되어 있습니다.
+D:\00_OpenCV_Project\Study_at_Australia\CPP\Veriadic template\x64\Release\Study8.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

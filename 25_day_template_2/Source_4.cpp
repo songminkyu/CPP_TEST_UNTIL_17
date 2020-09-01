@@ -1,0 +1,215 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <type_traits>
+#include <typeinfo>
+
+#define MAIN_ACTIVATION 0
+#define TYPE_SELECTION 0
+
+
+template<typename E, std::size_t N>
+void test(E(&arr)[N]) {
+	for (auto && m : arr)
+	{
+		std::cout << m << std::endl;
+	}
+}
+const char m[6] = "hello";
+const int m_int[6] = { 1,2,3,4,5,6 };
+int sum(int a, int b) { return a + b; } //sum을 빼고 타입을 만들어라
+
+
+#if(TYPE_SELECTION)
+template<typename R, typename...AS>
+R fn_call(R(&fn)(AS...), AS... args)
+{
+	return fn(args...);
+}
+#else
+										// 위처럼 해도되고 아래처럼 해도되고 똑같은 의미로 볼수 있다.
+template<typename R, typename...AS>
+R fn_call(R(&fn)(AS...), AS... args)
+{
+	return fn(args...);
+}
+#endif
+
+
+class BB {
+public:
+
+	BB() = default;
+	~BB() = default;
+
+	std::string sum_a(std::string _a) { return _a; }
+	std::string sum_b(std::string _b) { return _b; }
+	std::string sum_c(std::string _c) { return _c; }
+
+	std::string sum(std::string a, std::string b, std::string c)
+	{
+		return this->sum_a(a.c_str()) + this->sum_b(b.c_str()) + this->sum_c(c.c_str());
+	}
+
+	std::string sum_sub(std::string a, std::string b, std::string c, std::string d)
+	{
+		std::cout << "호출" << std::endl;
+		return this->sum_a(a.c_str()) + this->sum_b(b.c_str()) + this->sum_c(c.c_str()) + this->sum_a(d.c_str());
+	}
+
+
+	template<typename R, typename B, typename...AS>
+	R call_mem_fn_1(R(B::*fn)(AS...), B& obj, AS&&...args)
+	{
+		return (obj.*fn)(args...);
+	}
+
+	template<typename R, typename B, typename...AS>
+	R call_mem_fn_1(R(B::*fn)(AS...), B* obj, AS&&...args)
+	{
+		return (obj->*fn)(args...);
+	}
+
+	template<typename R, typename B, typename...AS1, typename... AS2>
+	R call_mem_fn_2(R(B::*fn)(AS1...), B* obj, AS2&&...args)
+	{
+		return (obj->*fn)(std::forward<AS2>(args)...);
+	}
+
+	template<typename R, typename B, typename...AS1, typename... AS2>
+	R call_mem_fn_2(R(std::remove_reference<B>::type::*fn)(AS1...), B&& obj, AS2&&...args)
+	{
+		return (obj.*fn)(std::forward<AS2>(args)...);
+	}
+
+	template<typename R, typename B1, typename B2, typename...AS1, typename... AS2>
+	R call_mem_fn_3(R(B1::*fn)(AS1...), B2* obj, AS2&&...args)
+	{
+		return (obj->*fn)(std::forward<AS2>(args)...);
+	}
+
+	template<typename R, typename B1, typename B2, typename...AS1, typename... AS2>
+	R call_mem_fn_3(R(B1::*fn)(AS1...), B2&& obj, AS2&&...args)
+	{
+		return (obj.*fn)(std::forward<AS2>(args)...);
+	}
+
+};
+
+class CC
+{
+public:
+	CC() = default;
+	~CC() = default;
+
+	int sum_a(int _a) { return _a; }
+	int sum_b(int _b) { return _b; }
+	int sum_c(int _c) { return _c; }
+
+	int sum(int a, int b, int c) { return this->sum_a(a) + this->sum_b(b) + this->sum_c(c); }
+
+};
+
+template<typename T>
+struct id_type {
+	using type = T;
+};
+
+/*****************************************/
+template<typename R, typename B, typename...AS>
+R call_mem_fn_1(R(B::*fn)(AS...), B& obj, AS...args)
+{
+	return (obj.*fn)(args...);
+}
+
+template<typename R, typename B, typename...AS>
+R call_mem_fn_1(R(B::*fn)(AS...), B* obj, AS...args)
+{
+	return (obj->*fn)(args...);
+}
+
+// 1 번 타입은 sum, sum_a, sum_b, sum_c 들이 복사 
+//메모리를 갖은 상태에서 처리하기떄문에 비용적으로 좋지 않은 함수
+
+/***********************************************************************/
+
+// MSVC 컴파일에선 동작도 안됨... 하지만 C랭에선 정상 컴파일 됨.
+
+template<typename R, typename B, typename...AS1, typename... AS2>
+R call_mem_fn_2(R(B::*fn)(AS1...), B* obj, AS2&&...args)
+{
+	return (obj->*fn)(std::forward<AS2>(args)...);
+}
+
+template<typename R, typename B, typename...AS1, typename... AS2>
+R call_mem_fn_2(R(std::remove_reference<B>::type::*fn)(AS1...), B&& obj, AS2&&...args)
+{
+	return (obj.*fn)(std::forward<AS2>(args)...);
+}
+
+/**********************************************************************/
+
+// 모든 함수들 호출 될때 복사를 방지하여, 비용적으로 효율을 높이는것과 동시에 유연성을 더한 소스.
+
+template<typename R, typename B1, typename B2, typename...AS1, typename... AS2>
+R call_mem_fn_3(R(B1::*fn)(AS1...), B2* obj, AS2&&...args)
+{
+	return (obj->*fn)(std::forward<AS2>(args)...);
+}
+
+template<typename R, typename B1, typename B2, typename...AS1, typename... AS2>
+R call_mem_fn_3(R(B1::*fn)(AS1...), B2&& obj, AS2&&...args)
+{
+	return (obj.*fn)(std::forward<AS2>(args)...);
+}
+
+/*
+3번쨰 요약 - call_mem_fn_3
+B, B2 를 분리하는가 분리하지 않는가에 대해서는 상속관계가 있을수 있기때문에, 또 상속관계가 아니라면
+에러가 발생되서 문제가 발생하지 않기때문에 분리하는것이 더 좋다는 의견
+*/
+
+/****************************************************************************/
+
+#if(MAIN_ACTIVATION)
+int main()
+{
+	std::string song = "song";
+	std::string min = "min";
+	std::string kyu = "kyu";
+	std::string sub = "sub";
+	std::string good[200];
+
+	test(m);
+	std::cout << fn_call(sum, 10, 40) << std::endl;
+	std::cout << typeid(&BB::sum).name() << std::endl;
+
+	BB* pbb = new BB;
+	BB  rbb;
+
+	good[0] = "song";
+	good[1] = "min";
+	good[2] = "kyu";
+
+	std::vector<std::string> *pBBvec = new std::vector<std::string>;
+	pBBvec->emplace_back(call_mem_fn_1(&BB::sum_sub, pbb, song, min, kyu, sub));
+	pBBvec->emplace_back(call_mem_fn_1(&BB::sum, rbb, good[0], good[1], good[2]));
+	pBBvec->emplace_back(call_mem_fn_3(&BB::sum_sub, pbb, song, min, kyu, sub));
+	pBBvec->emplace_back(call_mem_fn_3(&BB::sum, rbb, song, min, kyu));
+
+	//for (auto && mem_function : *pBBvec)	std::cout << mem_function << std::endl;
+
+	CC* pcc = new CC;
+	CC  rcc;
+
+	std::vector<int> *pCCvec = new std::vector<int>;
+	pCCvec->emplace_back(pbb->call_mem_fn_1(&CC::sum, pcc, 100, 200, 300));
+	pCCvec->emplace_back(pbb->call_mem_fn_1(&CC::sum, rcc, 400, 500, 600));
+	pCCvec->emplace_back(pbb->call_mem_fn_3(&CC::sum, pcc, 700, 800, 900));
+	pCCvec->emplace_back(pbb->call_mem_fn_3(&CC::sum, rcc, 1000, 1100, 1200));
+
+	//for (auto && mem_function : *pCCvec)	std::cout << mem_function << std::endl;
+
+}
+#endif

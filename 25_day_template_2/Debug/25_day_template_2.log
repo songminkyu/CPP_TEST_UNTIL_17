@@ -1,0 +1,4 @@
+﻿  Source_9.cpp
+d:\00_opencv_project\study_at_australia\25_day_template_2\25_day_template_2\source_9.cpp(233): warning C4172: returning address of local variable or temporary
+  25_day_template_2.vcxproj -> D:\00_OpenCV_Project\Study_at_Australia\Veriadic template\Debug\25_day_template_2.exe
+  25_day_template_2.vcxproj -> D:\00_OpenCV_Project\Study_at_Australia\Veriadic template\Debug\25_day_template_2.pdb (Full PDB)

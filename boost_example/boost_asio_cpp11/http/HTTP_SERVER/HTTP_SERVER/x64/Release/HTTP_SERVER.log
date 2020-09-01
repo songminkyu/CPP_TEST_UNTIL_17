@@ -1,0 +1,12 @@
+﻿  main.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  Generating code
+  1 of 1673 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  HTTP_SERVER.vcxproj -> D:\00_OpenCV_Project\Study_at_Australia\boost_example\boost_asio_cpp11\http\HTTP_SERVER\x64\Release\HTTP_SERVER.exe

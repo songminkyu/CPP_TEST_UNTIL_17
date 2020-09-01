@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\tuple_기본">
+      <UniqueIdentifier>{412ca7e6-0a36-408d-bfe2-0b650fd55cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타">
+      <UniqueIdentifier>{ee873398-0822-4436-b364-66359159866f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\tuple_고급 or 쓰레드">
+      <UniqueIdentifier>{d2758bb4-816e-4422-8227-7386cb4420b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\col">
+      <UniqueIdentifier>{f299efe2-17fa-47a8-9a17-fda0475bcb89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\kakao_coding_test">
+      <UniqueIdentifier>{b63086b2-06a3-4f8f-bbdb-0c50c993e1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Specialization">
+      <UniqueIdentifier>{3014aaa6-e14d-4e12-86b4-dd1623252c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2">
+      <UniqueIdentifier>{c53243b7-fcba-4641-a5c8-2753e22c889c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\regex">
+      <UniqueIdentifier>{c17fd657-935c-409e-b5f6-b9c648c7194e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\thread">
+      <UniqueIdentifier>{b705404d-22eb-4008-aab1-53e6d4dd7a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\aggregate init">
+      <UniqueIdentifier>{e7f55fe1-9ab9-408d-afe2-9acf2e19ae9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\filesystem">
+      <UniqueIdentifier>{60ee087c-50c4-4ff9-ab05-12e293e6ef60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\non_type_template">
+      <UniqueIdentifier>{0840f990-bd7c-47b5-a422-15439dce9371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\literal">
+      <UniqueIdentifier>{2d16e887-4428-4bdc-bd31-56539d32dc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\Aligednunion">
+      <UniqueIdentifier>{7dc52c98-c8f6-4d1e-ae15-11100fcc1d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\FunctionPoint">
+      <UniqueIdentifier>{e54871bc-9874-41a9-9ac0-c1f99f724e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\type">
+      <UniqueIdentifier>{d571e8e0-ed08-4bc6-b7c6-4d4132a22f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\velue_type">
+      <UniqueIdentifier>{0a5f5a35-aa34-4fdb-98d4-417221d298e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\string">
+      <UniqueIdentifier>{21072c39-cb4e-47a4-984b-ca97b5d0bd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\string\extract">
+      <UniqueIdentifier>{5477a7dc-ebe6-48ed-a2c1-d225680796fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그외 기타 2\람다">
+      <UniqueIdentifier>{191c0a00-dab2-4ba5-98a6-d2772054e356}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="tuple_2.h">
+      <Filter>소스 파일\tuple_고급 or 쓰레드</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tuple_1.cpp">
+      <Filter>소스 파일\tuple_고급 or 쓰레드</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_2.cpp">
+      <Filter>소스 파일\tuple_고급 or 쓰레드</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_3.cpp">
+      <Filter>소스 파일\tuple_고급 or 쓰레드</Filter>
+    </ClCompile>
+    <ClCompile Include="fmap.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="initializer_list_vctor.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="variadic_temple.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_construct.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_swap.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="make_tuple.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tie.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_forward_as_tuple.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_cat.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_get_or_std_tuple.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_1.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_operator.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_element.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_integer_sequence.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoration_pattern.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="std_tuple_integer_sequence_2.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary_Metaprogramming.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="variadic_vector.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="map_pair_vector.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="fmap2.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="coltest.cpp">
+      <Filter>소스 파일\col</Filter>
+    </ClCompile>
+    <ClCompile Include="multi_range.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="stringtTest.cpp">
+      <Filter>소스 파일\col</Filter>
+    </ClCompile>
+    <ClCompile Include="function_Pointer.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao_codingtest.cpp">
+      <Filter>소스 파일\kakao_coding_test</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_structured_binding.cpp">
+      <Filter>소스 파일\tuple_기본</Filter>
+    </ClCompile>
+    <ClCompile Include="Specialization1.cpp">
+      <Filter>소스 파일\Specialization</Filter>
+    </ClCompile>
+    <ClCompile Include="serialization.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="type_Deducation.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="stronged_type.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_binding_decl.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="std_apply.cpp">
+      <Filter>소스 파일\그외 기타</Filter>
+    </ClCompile>
+    <ClCompile Include="소스12.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스2.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스3.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스4.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스5.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스6.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스7.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스8.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스9.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스10.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스11.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스13.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스14.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스15.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스16.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스17.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스18.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스19.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스24.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스25.cpp">
+      <Filter>소스 파일\그외 기타 2\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="소스26.cpp">
+      <Filter>소스 파일\그외 기타 2\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="소스27.cpp">
+      <Filter>소스 파일\그외 기타 2\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="소스28.cpp">
+      <Filter>소스 파일\그외 기타 2\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="소스29.cpp">
+      <Filter>소스 파일\그외 기타 2\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="소스30.cpp">
+      <Filter>소스 파일\그외 기타 2\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="소스32.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스31.cpp">
+      <Filter>소스 파일\그외 기타 2\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="소스34.cpp">
+      <Filter>소스 파일\그외 기타 2\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="소스33.cpp">
+      <Filter>소스 파일\그외 기타 2\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="소스35.cpp">
+      <Filter>소스 파일\그외 기타 2\aggregate init</Filter>
+    </ClCompile>
+    <ClCompile Include="소스36.cpp">
+      <Filter>소스 파일\그외 기타 2\aggregate init</Filter>
+    </ClCompile>
+    <ClCompile Include="소스20.cpp">
+      <Filter>소스 파일\그외 기타 2\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="소스21.cpp">
+      <Filter>소스 파일\그외 기타 2\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="소스22.cpp">
+      <Filter>소스 파일\그외 기타 2\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="소스23.cpp">
+      <Filter>소스 파일\그외 기타 2\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="소스37.cpp">
+      <Filter>소스 파일\그외 기타 2\non_type_template</Filter>
+    </ClCompile>
+    <ClCompile Include="소스38.cpp">
+      <Filter>소스 파일\그외 기타 2\literal</Filter>
+    </ClCompile>
+    <ClCompile Include="소스39.cpp">
+      <Filter>소스 파일\그외 기타 2\Aligednunion</Filter>
+    </ClCompile>
+    <ClCompile Include="소스40.cpp">
+      <Filter>소스 파일\그외 기타 2\Aligednunion</Filter>
+    </ClCompile>
+    <ClCompile Include="소스41.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스42.cpp">
+      <Filter>소스 파일\그외 기타 2\literal</Filter>
+    </ClCompile>
+    <ClCompile Include="소스43.cpp">
+      <Filter>소스 파일\그외 기타 2\FunctionPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="소스44.cpp">
+      <Filter>소스 파일\그외 기타 2\type</Filter>
+    </ClCompile>
+    <ClCompile Include="소스45.cpp">
+      <Filter>소스 파일\그외 기타 2\type</Filter>
+    </ClCompile>
+    <ClCompile Include="소스46.cpp">
+      <Filter>소스 파일\그외 기타 2\FunctionPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="소스47.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스48.cpp">
+      <Filter>소스 파일\그외 기타 2\velue_type</Filter>
+    </ClCompile>
+    <ClCompile Include="소스49.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="소스50.cpp">
+      <Filter>소스 파일\그외 기타 2</Filter>
+    </ClCompile>
+    <ClCompile Include="string_view_version1.cpp">
+      <Filter>소스 파일\그외 기타 2\string\extract</Filter>
+    </ClCompile>
+    <ClCompile Include="string_version3.cpp">
+      <Filter>소스 파일\그외 기타 2\string\extract</Filter>
+    </ClCompile>
+    <ClCompile Include="string_version2.cpp">
+      <Filter>소스 파일\그외 기타 2\string\extract</Filter>
+    </ClCompile>
+    <ClCompile Include="string_version1.cpp">
+      <Filter>소스 파일\그외 기타 2\string\extract</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambda_Inheritanc.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스51.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스52.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스53.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambda_Inheritanc2.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스54.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스55.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스56.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스57.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스58.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스59.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스60.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스61.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+    <ClCompile Include="소스62.cpp">
+      <Filter>소스 파일\그외 기타 2\람다</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

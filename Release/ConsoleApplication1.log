@@ -1,0 +1,23 @@
+﻿  tuple_2.cpp
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(450): error C3260: ')': skipping unexpected token(s) before lambda body
+  tuple_2.cpp(204): note: see reference to function template instantiation 'auto async<std::_Binder<std::_Unforced,double (__cdecl &)(double,double,double,std::string &),const std::_Ph<1> &,const std::_Ph<2> &,const std::_Ph<3> &,const std::_Ph<4> &>&,double,double,double,std::string&>(Function,double &&,double &&,double &&,std::string &)' being compiled
+          with
+          [
+              Function=std::_Binder<std::_Unforced,double (__cdecl &)(double,double,double,std::string &),const std::_Ph<1> &,const std::_Ph<2> &,const std::_Ph<3> &,const std::_Ph<4> &> &
+          ]
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(450): error C3493: 'args' cannot be implicitly captured because no default capture mode has been specified
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(450): error C2143: syntax error: missing ')' before ';'
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(450): error C2664: 'packaged_task<result_type (void)>::packaged_task(packaged_task<result_type (void)> &&)': cannot convert argument 1 from 'std::_Binder<std::_Unforced,int,_Ty,_Ty,_Ty,std::string &>' to 'std::weak_ptr<shared<R (void)>>'
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              R=result_type
+          ]
+  d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(450): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(452): error C3536: '_p': cannot be used before it is initialized
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(452): error C2227: left of '->get_future' must point to class/struct/union/generic type
+  d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(452): note: type is 'int'
+d:\00_opencv_project\study_at_australia\veriadic template\consoleapplication1\tuple_2.h(453): error C3536: 'result': cannot be used before it is initialized

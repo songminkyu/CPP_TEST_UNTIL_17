@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\variant">
+      <UniqueIdentifier>{8f369044-1f2c-4b54-88ec-011585712861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\spirit">
+      <UniqueIdentifier>{d74d19fa-9182-4cda-b0a5-69f5ed245e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fusion">
+      <UniqueIdentifier>{08c21552-31c2-4007-9a58-a147e834c04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\barrier">
+      <UniqueIdentifier>{2674bb73-0392-4114-b055-a6874d18d150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Accumulators">
+      <UniqueIdentifier>{bd5740df-8585-41ba-9633-9f9872e3c299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Any">
+      <UniqueIdentifier>{f2e81c14-d805-4831-9ebc-35ec02cbe2cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assign">
+      <UniqueIdentifier>{0e158cbb-3dd1-47b3-b89e-1db904410087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proto">
+      <UniqueIdentifier>{8cef03ae-e88f-4eb1-9eb3-f7259cffeafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Optional">
+      <UniqueIdentifier>{4fd571c7-72c9-4b8a-96ee-99a259f38466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\multiprecision">
+      <UniqueIdentifier>{78e37cba-8d6d-4bfe-ae7b-6f17cae51920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\coroutine">
+      <UniqueIdentifier>{f1411e52-f791-4683-bef5-d01f4bd45c37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\signal">
+      <UniqueIdentifier>{1bd51ca2-f20c-4217-af0a-03f319967c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filesystem">
+      <UniqueIdentifier>{3062b075-ca49-480d-9e05-36fad5c722a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\asio">
+      <UniqueIdentifier>{b5832961-20c3-4808-ae86-2a916367af8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tokenizer">
+      <UniqueIdentifier>{a655fe72-e153-4b0c-ae70-cd36aa3a1811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\karma">
+      <UniqueIdentifier>{117b59de-fe31-4914-9650-74423796af89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\range">
+      <UniqueIdentifier>{00d5f45a-80b1-414f-bace-090e514da61e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\program_options">
+      <UniqueIdentifier>{680210bb-9c9f-4785-b64a-72cb3f15c197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PRM">
+      <UniqueIdentifier>{23f45ff8-f73c-40e6-b136-2bd085af79f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="boost_variant_00.cpp">
+      <Filter>Source Files\variant</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_variant_01.cpp">
+      <Filter>Source Files\variant</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_variant_02.cpp">
+      <Filter>Source Files\variant</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirit.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_fusion_00.cpp">
+      <Filter>Source Files\fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_fusion_01.cpp">
+      <Filter>Source Files\fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_fusion_02.cpp">
+      <Filter>Source Files\fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_fusion_03.cpp">
+      <Filter>Source Files\fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_barrier.cpp">
+      <Filter>Source Files\barrier</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Accumulators_00.cpp">
+      <Filter>Source Files\Accumulators</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Accumulators_01.cpp">
+      <Filter>Source Files\Accumulators</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_any_00.cpp">
+      <Filter>Source Files\Any</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_any_01.cpp">
+      <Filter>Source Files\Any</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_assign_00.cpp">
+      <Filter>Source Files\Assign</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_assign_01.cpp">
+      <Filter>Source Files\Assign</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_assign_02.cpp">
+      <Filter>Source Files\Assign</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_assign_03.cpp">
+      <Filter>Source Files\Assign</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_proto_00.cpp">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_proto_01.cpp">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_optional.cpp">
+      <Filter>Source Files\Optional</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_multiprecision_00.cpp">
+      <Filter>Source Files\multiprecision</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_01.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_02.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_03.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_04.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_05.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_06.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_coroutine.cpp">
+      <Filter>Source Files\coroutine</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_signal.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="asio_echo_server.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Tokenizer_02.cpp">
+      <Filter>Source Files\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Tokenizer_01.cpp">
+      <Filter>Source Files\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Tokenizer_00.cpp">
+      <Filter>Source Files\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_filesystem_04.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_filesystem_00.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_filesystem_01.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_filesystem_02.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_filesystem_03.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_07_CDISM_STUDY.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_08_CDISM_STUDY.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_09_CDISM_STUDY.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_10_CDISM_STUDY.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_spirite_11_CDISM_STUDY.cpp">
+      <Filter>Source Files\spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="karma00.cpp">
+      <Filter>Source Files\karma</Filter>
+    </ClCompile>
+    <ClCompile Include="karma01.cpp">
+      <Filter>Source Files\karma</Filter>
+    </ClCompile>
+    <ClCompile Include="karma02.cpp">
+      <Filter>Source Files\karma</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_client.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncfilesystemClient_2.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpBeastClient.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="websockBeastClient.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Tokenizer_03.cpp">
+      <Filter>Source Files\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_Tokenizer_04.cpp">
+      <Filter>Source Files\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="program_options.cpp">
+      <Filter>Source Files\program_options</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_zip_range_00.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_zip_range_01.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="zip_range_00.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="zip_range_01.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="zip_range_02.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>Source Files\range</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncfilesystemClient_1.cpp">
+      <Filter>Source Files\asio</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_slot_arguments.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="passing_slots.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="boost_signal2.cpp">
+      <Filter>Source Files\signal</Filter>
+    </ClCompile>
+    <ClCompile Include="program_options2.cpp">
+      <Filter>Source Files\program_options</Filter>
+    </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>Source Files\PRM</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

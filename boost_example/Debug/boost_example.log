@@ -1,0 +1,4 @@
+﻿  boost_spirite_07_CDISM_STUDY.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\00_opencv_project\study_at_australia\libraries-developvs2017-concurcy\boost_1_64_0\boost\spirit\home\support\char_encoding\iso8859_1.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  boost_example.vcxproj -> D:\00_OpenCV_Project\Study_at_Australia\boost_example\Debug\boost_example.exe

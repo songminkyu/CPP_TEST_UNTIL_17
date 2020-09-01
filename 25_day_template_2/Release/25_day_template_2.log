@@ -1,0 +1,2 @@
+﻿MSVCRT.lib(exe_main.obj) : error LNK2001: _main 외부 기호를 확인할 수 없습니다.
+D:\00_OpenCV_Project\Study_at_Australia\Veriadic template\Release\25_day_template_2.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
